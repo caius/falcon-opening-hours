@@ -60,7 +60,7 @@
 
     <h1>Falcon is <strong><?php echo $status ?></strong>!</h1>
 
-    <p><a href="/falcon/opening_hours.jpg">Opening hours</a></p>
+    <p><a href="/falcon/opening_hours.jpg">Opening hours</a> ~ <a href="http://github.com/caius/falcon-opening-hours">Source Code</a></p>
 
   </body>
 </html>
