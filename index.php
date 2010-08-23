@@ -9,27 +9,29 @@
   $closed = "Closed";
   $status = $closed;
 
+#  echo "day: $day<br>hour: $hour<br>min: $min";
+
   switch ($day) {
     case 'Fri':
       if (($hour >= 12 && $hour < 15) || ($hour >= 17 && $hour <= 23)) {
         $status = $open;
       }
       break;
-    
+
     case 'Sat':
       if ($hour >= 12 && $hour <= 23) {
         $status = $open;
       }
       break;
-    
+
     case 'Sun':
       if ($hour >= 12 && $hour <= 22) {
         $status = $open;
       }
       break;
-    
+
     default:
-      if (($hour >= 12 && $hour < 15) || (($hour >= 17 && $min >= 30) && $hour <= 23)) {
+      if (($hour >= 12 && $hour < 15) || ($hour == 17 && $min >= 30) || ($hour >= 18 && $hour <= 23)) {
         $status = $open;
       }
       break;
